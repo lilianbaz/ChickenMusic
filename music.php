@@ -7,9 +7,8 @@ $Yend = date("Y");
 $Mend = date("m"); 
 $banList = [
 	"2015-13",
-	"2016-05",
-	"2016-07",
 ];
+$baseImgUrl = "https://raw.githubusercontent.com/lilianbaz/ChickenMusic/master/img/";
 
 # Main
 do	{
@@ -57,7 +56,7 @@ do	{
 	</head>
 	<body>
 
-<?php echo "<div style=\"text-align:center\"><h1 style=\"font-size:350px; margin-bottom:0\"><strong><span class=\"rainbow\">$rand</span></strong></h1></div>"; ?>
+		<?= "<div style=\"text-align:center\"><img style=\"width:600px\" src=\"$baseImgUrl$rand.jpg\"></div>"; ?>
 
 	</body>
 </html>

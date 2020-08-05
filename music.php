@@ -4,7 +4,7 @@
 $Ystart = 2015;
 $Mstart = 12;
 $Yend = date("Y");
-$Mend = date("m"); 
+$Mend = date("m");
 $banList = [
 	"2015-13",
 ];
@@ -15,7 +15,7 @@ do	{
 	# Year generation
 	$randYear = random_int($Ystart, $Yend);
 
-	# Month generatoin	
+	# Month generatoin
 	if($randYear == $Ystart)	{
 		$randMonth = random_int($Mstart, 13);
 	}
@@ -38,6 +38,10 @@ do	{
 		}
 	}
 } while(!$found);
+
+$url = $baseImgUrl . $rand . ".jpg";
+
+/*
 ?>
 
 <!DOCTYPE HTML>
@@ -59,4 +63,4 @@ do	{
 		<?= "<div style=\"text-align:center\"><img style=\"width:600px\" src=\"$baseImgUrl$rand.jpg\"></div>"; ?>
 
 	</body>
-</html>
+</html>*/
